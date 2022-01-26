@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include('./partials/head.ejs', { title: post.title , stylesheet: '/styles/post.css' }) %>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <article class="post">
+            <h1 class="post-title"> <%= post.title %> </h1>
+            <section class="content-wrapper">
+                <%- post.content  %>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

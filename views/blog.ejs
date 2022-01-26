@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Blog</title>
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <section class="blog-cards">
+        <% posts.forEach(post => { %>
+        <div class="blog-card">
+            <img src=<%= post.featuredImage.node.sourceUrl %> class="featured-image"
+                alt=<%= post.featuredImage.node.altText %> loading="lazy" />
+            <div class="blog-card-title-wrapper">
+                <a href='/blog/<%= post.slug %>' class="blog-card-title">
+                    <%= post.title  %>
+                </a>
+            </div>
+
+        </div>
+        <% }) %>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

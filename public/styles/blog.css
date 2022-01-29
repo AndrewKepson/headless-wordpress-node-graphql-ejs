@@ -7,6 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  padding: 1.75rem;
 }
 
 .blog-card {

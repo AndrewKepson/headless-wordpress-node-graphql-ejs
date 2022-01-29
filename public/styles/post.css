@@ -11,7 +11,8 @@ main {
 }
 
 .content-wrapper {
-  margin: 2.5rem 2rem;
+  margin: 1.25rem 2rem;
+  text-align: center;
 }
 
 .content-wrapper p {

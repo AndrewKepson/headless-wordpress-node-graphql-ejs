@@ -1,5 +1,6 @@
 main {
   height: 100%;
+  padding: 1.75rem;
 }
 
 h1 {
@@ -7,4 +8,10 @@ h1 {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.25rem;
   font-weight: bold;
+}
+
+@media (min-width: 720px) {
+  main {
+    padding: 3rem;
+  }
 }

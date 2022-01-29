@@ -130,6 +130,8 @@ body {
   width: 100%;
   background-image: linear-gradient(90deg, #4bc0c8, #c779d0, #feac5e);
   text-align: center;
+  position: static;
+  bottom: 0;
 }
 
 .footer h4 {

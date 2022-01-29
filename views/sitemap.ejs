@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', { title: 'HTML Sitemap | Lorem Ipsum Blog', stylesheet: '/styles/sitemap.css' }) %>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <section class="sitemap-wrapper">
+        <ul id="sitemap-list">
+            <li class="sitemap-item">
+                <a href="/" title="Lorem Ipsum Blog Home">
+                    Home
+                </a>
+            </li>
+            <li class="sitemap-item">
+                <a href="/about" title="Lorem Ipsum Blog Home">
+                    About
+                </a>
+            </li>
+            <li class="sitemap-item">
+                <a href="/blog" title="Lorem Ipsum Blog Home">
+                    Blog
+                </a>
+            </li>
+            <% blogLinks.forEach(link => { %>
+            <li class="sitemap-item"><%= link %> </li>
+            <% }) %>
+        </ul>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
